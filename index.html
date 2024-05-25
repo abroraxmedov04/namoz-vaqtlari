@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Quron vaqtlari</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__inner">
+          <a href="index.html" class="header__logo">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+          <ul class="header__nav">
+            <li class="nav__item">
+              <a href="index.html" class="nav__item-link"> Namoz Vaqtlari </a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html" class="nav__item-link"> Namoz Darslari </a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html" class="nav__item-link">
+                Namozga Oid Savol Javoblar
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="countries">
+        <div class="container">
+          <div class="countries__inner">
+            <h1 class="countries__title">Hududlar</h1>
+
+            <time class="countries__time"> 45:45:45 </time>
+
+            <form class="form">
+              <div class="date__format">
+                <select id="date__format-select">
+                  <option value="day">day</option>
+                  <option value="week">week</option>
+                  <option value="monthly">monthly</option>
+                </select>
+              </div>
+              <input
+                type="text"
+                placeholder="Qidirish..."
+                aria-label="qidirish"
+                class="search-input"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="times">
+        <div class="container">
+          <div class="times__inner">
+            <div class="times__inner-header">
+              <h2 class="times__title">
+                Namoz vaqtlari
+                <span class="country-name">«Toshkent»</span> vaqti bo'yicha
+              </h2>
+
+              <time class="times__time"> 2024 yil 25-may, shanba</time>
+            </div>
+
+            <ul class="list"></ul>
+
+            <h2 class="weekly-time-title"></h2>
+
+            <table class="fl-table">
+              <thead>
+                <tr>
+                  <th>id</th>
+                  <th>week</th>
+                  <th>date</th>
+                  <th>Bomdod</th>
+                  <th>Quyosh</th>
+                  <th>Peshin</th>
+                  <th>Asr</th>
+                  <th>Shom</th>
+                  <th>Xufton</th>
+                </tr>
+              </thead>
+              <tbody class="table__body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

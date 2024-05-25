@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/poppins.woff2") format("woff2");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #e5e5e5;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
+}
+
+.header__inner {
+  padding-block: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo img {
+  height: 47px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav__item-link {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 5px;
+  background-color: orange;
+  bottom: -105%;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.nav__item:hover::after {
+  width: 100%;
+}
+
+.countries {
+  margin-top: 150px;
+}
+
+.countries__inner {
+  background-color: #fff;
+  border-radius: 10px;
+  padding-block: 30px;
+  padding-inline: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.countries__title {
+  font-size: 32px;
+}
+
+.search-input {
+  padding-block: 5px;
+  padding-inline: 10px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+.times {
+  margin-top: 40px;
+}
+
+.times__inner {
+  background-color: #fff;
+  border-radius: 10px;
+  padding-block: 30px;
+  padding-inline: 20px;
+}
+
+.times__inner-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.times__title {
+  font-weight: 500;
+}
+
+.times__title span {
+  color: orange;
+  font-weight: bold;
+}
+
+.list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list__item {
+  width: 150px;
+  padding-block: 20px;
+  padding-inline: 40px;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.list__item-day {
+  font-weight: 600;
+}
+
+.list__item-time {
+  font-weight: 600;
+}
+
+.countries__time {
+  font-weight: 600;
+  font-size: 25px;
+  color: orange;
+}
+
+.date__format {
+  display: flex;
+  align-items: center;
+}
+
+#date__format-select {
+  padding-block: 4.2px;
+  padding-inline: 10px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+.form {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* table  */
+
+.fl-table {
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.fl-table td,
+.fl-table th {
+  text-align: center;
+  padding: 8px;
+}
+
+.fl-table td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 12px;
+}
+
+.fl-table thead th {
+  border: 1px solid grey;
+}
+
+.fl-table thead th:nth-child(odd) {
+  border: 1px solid grey;
+}
+
+.fl-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.weekly-time-title {
+  margin-top: 30px;
+  font-weight: 500;
+}
